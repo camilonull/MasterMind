@@ -1,0 +1,35 @@
+
+<div class="wrapper fadeInDown">
+  <!-- este es el enlace al tipo de letra -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+
+  <div id="formContent">
+
+    <div class="fadeIn first">
+      <img src="assets\img\logo.png" class="icon" id="icon" alt="User Icon" />
+
+    </div>
+    <h1>Login</h1>
+    <form (submit)="validarEdad(edad)">
+      <input #usuario type="text" id="usuario" class="fadeIn second custom-text-color  " name="usuario" placeholder="Your Username">
+      <input #edad type="text" id="Edad" class="fadeIn second custom-text-color" name="edad" placeholder="Your Age"
+             pattern="[0-9]{1,2}" title="Please enter a number with a maximum of two digits">
+      <div class="fadein second custom-text-color input-box">
+        <label for="genero" class="fadeIn second custom-text-color">Genero:</label>
+        <select formControlName="genero"  id="genero"
+                style="height: 40px; width: 300px;" class="fadeIn second custom-text-color">
+          <option value="F">Femenino</option>
+          <option value="M">Masculino</option>
+          <option value="NA">No aplica</option>
+        </select>
+      </div>
+      <button type="button" class="btn btn-primary custom-botton" (click)="login(usuario)">Sing In</button>
+    </form>
+    <div>
+    </div>
+  </div>
+</div>
+
+

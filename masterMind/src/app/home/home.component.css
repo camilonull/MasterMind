@@ -1,0 +1,63 @@
+/* Establece estilos para el cuerpo de la página */
+html {
+  background-color: #cb7381;
+}
+
+body {
+  font-family: 'Cormorant Garamond', sans-serif;
+  height: 100vh;
+}
+
+/* Establece estilos para la barra de navegación */
+.navigation-bar {
+  background-color: #0f469a;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Establece estilos para la lista de enlaces */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+li {
+  margin: 0 10px;
+}
+
+/* Establece estilos para el botón */
+.colored-button {
+  background-color: #3f8123;
+  color: #0d0d0d;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.colored-button:hover {
+  background-color: #1a330c;
+}
+
+/* Establece estilos para los enlaces */
+a {
+  color:#0d0d0d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+
+.logo {
+  width: 20px; /* Ancho de la imagen */
+  height: 20px; /* Alto de la imagen */
+}
+

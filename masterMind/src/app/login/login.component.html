@@ -1,0 +1,26 @@
+
+<div class="wrapper fadeInDown">
+<!-- este es el enlace al tipo de letra -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+
+    <div id="formContent">
+
+      <div class="fadeIn first">
+        <img src="assets\img\logo.png" class ="icon" id="icon" alt="User Icon" />
+
+      </div>
+      <h1>Login</h1>
+      <form>
+        <input #usuario type="text" id="usuario" class="fadeIn second custom-text-color " name="usuario" placeholder="Your Username">
+        <input #contrasena type="password" id="contrasena" class="fadeIn third custom-text-color" name="login" placeholder="Your Password">
+        <button type="button" class="btn btn-primary" (click)="login(usuario.value, contrasena.value)">Sing In</button>
+      </form>
+      <div>
+        <h3 [ngClass]="'Create-count'" [routerLink]="['/recover-password']">Forgot password</h3>
+      </div>
+    </div>
+  </div>
+
+
