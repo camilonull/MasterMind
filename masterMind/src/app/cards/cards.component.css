@@ -7,14 +7,20 @@
   transition: opacity 2.5s;
 }
 
+.title-primary{
+  color: #000028;
+  box-shadow: 0 4px 8px 0 rgba(8,51,51,0.74);
+  background-color: #7fc9f1;
+}
+
 body {
   width: 500px;
   height: 600px;
   padding: 0px 10px;
   margin: 10px auto;
   text-align: center;
-  background-color: #ffeab9;
 }
+
 .flip-temporaryCard-inner {
   position: relative;
   width: 100px;
@@ -25,7 +31,9 @@ body {
   box-shadow: 0 4px 8px 0 #0c0d0dbd;
   display: inline-block;
   margin: 5px;
+
 }
+
 .flip-temporaryCard-front, .flip-temporaryCard-back {
   position: absolute;
   width: 100px;
@@ -35,8 +43,60 @@ body {
 }
 .flip-temporaryCard-front {
   background-color: #ffffff;
+  border: 2px solid gold; /* 2px de grosor y color dorado */
+  border-radius: 5px;
 }
 .flip-temporaryCard-back {
   background-color: #ffffff;
   transform: rotateY(180deg);
+  border: 2px solid gold; /* 2px de grosor y color dorado */
+  border-radius: 5px;
 }
+
+.win-primary{
+  position: absolute;
+  left: 45px;top: 150px;
+  font-size: 70px;
+  font-weight: bold;
+  color: #1900ca;
+  display: none;
+}
+.background-overlay {
+  background: rgb(111, 180, 229); /* Fondo opaco con un nivel de opacidad de 0.5 */
+  filter: blur(5px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1; /* Establece un z-index inferior para que esté detrás del contenido */
+}
+
+
+.screen-primary{
+  width: 500px;
+  height: 540px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 #0c0d0dbd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 0;
+
+}
+
+.footer-items{
+  position: absolute;left: 10px;top: 100%;
+}
+
+.first-item{
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  float: left;
+}
+
+.other-items{
+  font-size: 16px;font-weight: bold;position: relative;float: left;margin-left: 25px;
+}
+
